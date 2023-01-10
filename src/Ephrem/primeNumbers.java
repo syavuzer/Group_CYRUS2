@@ -5,13 +5,13 @@ public class primeNumbers {
     public static String prime (int num){
         String prime = "";int count =0;
 
-        for(int i=2; i<(num/2); i++){
+        for(int i=2; i<=num/2; i++){
            if(num%i==0) {
                count++;
                break;
            }
         }
-        prime=((num!=0 && num!=1)&& count==0)?num+" is prime number":num+" is not prime number";
+        prime=(num>1 && count==0)? num+" is prime number" : num+" is not prime number";
 
         return  prime;
     }
