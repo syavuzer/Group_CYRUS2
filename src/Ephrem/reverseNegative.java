@@ -15,9 +15,14 @@ public class reverseNegative {
         System.out.println(negativeNum(negative));
     }
     public static String negativeNum(int negative){
-        int absNegative = Math.abs(negative);
+        String num = "";
+        for(int i=negative; 0>i; i++ ){
+            num += String.valueOf(i)+", ";
+
+        }
+
         //int absNegative = -1*negative; we can also use this
 
-        return "The absolute value of "+negative+" is " + absNegative;
+        return num;
     }
 }
