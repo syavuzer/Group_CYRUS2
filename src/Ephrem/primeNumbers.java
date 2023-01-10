@@ -5,7 +5,7 @@ public class primeNumbers {
     public static String prime (int num){
         String prime = "";int count =0;
 
-        for(int i=2; i<(num/2); i++){
+        for(int i=2; i<=num/2; i++){
            if(num%i==0) {
                count++;
                break;
