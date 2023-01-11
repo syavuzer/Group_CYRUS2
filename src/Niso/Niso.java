@@ -1,5 +1,4 @@
 package Niso;
-
 public class Niso {
 
     public static void main(String[] args) {
