@@ -14,12 +14,12 @@ public class reverseNegative {
 
         System.out.println(negativeNum(negative));
     }
-    public static String negativeNum(int negative){
+    public static String negativeNum(int negative) {
         String num = "";
-        for(int i=negative; 0>i; i++ ){
-            num += String.valueOf(i)+", ";
+        for (int i = negative; 0 > i; i++) {
+            num += String.valueOf(i) + ", ";
         }
 
-        return "The absolute value of "+negative+" is " + absNegative;
+        // return "The absolute value of "+negative+" is " + absNegative;
     }
 }
