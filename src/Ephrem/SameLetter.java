@@ -4,16 +4,18 @@ import java.util.Scanner;
 public class SameLetter {
     public static boolean sameLetter(String firstWord, String secondWord){
         boolean sameLetter = true;
-        for(int i=0; i<firstWord.length(); i++){
+        for(int i=0; i<secondWord.length(); i++){
             int count = 0;
             for(int j=0; j<firstWord.length(); j++) {
-                if (firstWord.charAt(i) == secondWord.charAt(j)) {
+                if (secondWord.charAt(i) == firstWord.charAt(j)) {
                     count++;
                     break;
                 }
             }
-            if(count == firstWord.length()-1){
+            if(count == secondWord.length()-1){
                 sameLetter = true;
+            }else {
+                sameLetter = false;
             }
         }
        return sameLetter;

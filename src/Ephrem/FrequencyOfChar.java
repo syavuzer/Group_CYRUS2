@@ -1,8 +1,6 @@
 package Ephrem;
 import java.util.Scanner;
 
-import static java.lang.Character.isLowerCase;
-
 public class FrequencyOfChar {
     public static String frequency(String word){
         int count = 0; String charCount ="";

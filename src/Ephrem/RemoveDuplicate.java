@@ -5,11 +5,10 @@ import java.util.Scanner;
 public class RemoveDuplicate {
     public static String duplicate(String word){
         String unique = "";
+        String wordLower = word.toLowerCase();
         for(int i=0; i<word.length(); i++){
-            if(i == word.length()-1 && !unique.contains(String.valueOf(word.charAt(i)))){
-                unique+=word.charAt(i);
-            }else if(Character.toLowerCase(word.charAt(i))!= word.charAt(i+1)){
-                unique+=word.charAt(i);
+            if (!unique.toLowerCase().contains(String.valueOf(wordLower.charAt(i)))) {
+                unique += word.charAt(i);
             }
         }
         return unique;
