@@ -1,8 +1,10 @@
+package Wahida;
+
 public class First {
 
     public static void main(String[] args) {
 
-        System.out.println("First Class");
+        System.out.println("Wahida.First Class");
     }
 
 }
