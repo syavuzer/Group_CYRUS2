@@ -20,6 +20,6 @@ public class reverseNegative {
             num += String.valueOf(-1*i) + ", ";
         }
 
-        // return "The absolute value of "+negative+" is " + absNegative;
+        return num;
     }
 }
