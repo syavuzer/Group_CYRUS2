@@ -2,21 +2,21 @@ package Ephrem;
 import java.util.Scanner;
 
 public class SameLetter {
-    public static boolean sameLetter(String firstWord, String secondword){
-        boolean same = true;
+    public static boolean sameLetter(String firstWord, String secondWord){
+        boolean sameLetter = true;
         for(int i=0; i<firstWord.length(); i++){
             int count = 0;
             for(int j=0; j<firstWord.length(); j++) {
-                if (firstWord.charAt(i) == secondword.charAt(j)) {
+                if (firstWord.charAt(i) == secondWord.charAt(j)) {
                     count++;
                     break;
                 }
             }
             if(count == firstWord.length()-1){
-                same = true;
+                sameLetter = true;
             }
         }
-       return same;
+       return sameLetter;
     }
 
     public static void main(String[] args) {
