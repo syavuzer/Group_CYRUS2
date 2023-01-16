@@ -17,7 +17,7 @@ public class reverseNegative {
     public static String negativeNum(int negative) {
         String num = "";
         for (int i = negative; 0 > i; i++) {
-            num += String.valueOf(-1*i) + ", ";
+            num = (i<-1)?(num+String.valueOf(-1*i)+", "):(num+String.valueOf(-1*i));
         }
 
         return num;
