@@ -7,7 +7,7 @@ public class SameLetter {
         for(int i=0; i<secondWord.length(); i++){
             int count = 0;
             for(int j=0; j<firstWord.length(); j++) {
-                if (secondWord.charAt(i) == firstWord.charAt(j)) {
+                if (Character.toLowerCase(secondWord.charAt(i)) == Character.toLowerCase(firstWord.charAt(j))) {
                     count++;
                     break;
                 }
