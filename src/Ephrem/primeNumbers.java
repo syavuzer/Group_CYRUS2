@@ -11,7 +11,7 @@ public class primeNumbers {
                break;
            }
         }
-        prime=(num>1 && count==0)? num+" is prime number" : num+" is not prime number";
+        prime=(num>1 && count==0)? (num+" is prime number") : (num+" is not prime number");
 
         return  prime;
     }
