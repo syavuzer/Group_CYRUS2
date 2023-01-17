@@ -21,7 +21,7 @@ public class reverseNegative {
 
         }
 
-        //int absNegative = -1*negative; we can also use this
+        //int absNegative = -1*negative; we can also use this.
 
         return num;
     }
