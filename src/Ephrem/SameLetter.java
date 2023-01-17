@@ -9,11 +9,7 @@ public class SameLetter {
                 count++;
             }
         }
-        if(count == secondWord.length()){
-            sameLetter = true;
-        }else {
-            sameLetter = false;
-        }
+        sameLetter = count == (secondWord.length());
 
        return sameLetter;
     }
