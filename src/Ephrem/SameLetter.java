@@ -3,21 +3,18 @@ import java.util.Scanner;
 
 public class SameLetter {
     public static boolean sameLetter(String firstWord, String secondWord){
-        boolean sameLetter = true;
-        for(int i=0; i<secondWord.length(); i++){
-            int count = 0;
-            for(int j=0; j<firstWord.length(); j++) {
-                if (Character.toLowerCase(secondWord.charAt(i)) == Character.toLowerCase(firstWord.charAt(j))) {
-                    count++;
-                    break;
-                }
-            }
-            if(count == secondWord.length()-1){
-                sameLetter = true;
-            }else {
-                sameLetter = false;
+        boolean sameLetter = true;int count = 0;
+        for(int i=0; i<secondWord.length(); i++) {
+            if (firstWord.toLowerCase().contains(String.valueOf(Character.toLowerCase(secondWord.charAt(i))))){
+                count++;
             }
         }
+        if(count == secondWord.length()){
+            sameLetter = true;
+        }else {
+            sameLetter = false;
+        }
+
        return sameLetter;
     }
 
@@ -32,6 +29,7 @@ public class SameLetter {
     }
 }
 /*
+Character.toLowerCase(secondWord.charAt(i)) == Character.toLowerCase(firstWord.charAt(j))
 String --- Same letters
 Write a return method that check if a string is build out of the
 same letters as another string.
