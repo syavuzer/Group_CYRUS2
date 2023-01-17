@@ -14,14 +14,14 @@ public class reverseNegative {
 
         System.out.println(negativeNum(negative));
     }
-    public static String negativeNum(int negative){
+    public static String negativeNum(int negative) {
         String num = "";
-        for(int i=negative; 0>i; i++ ){
+        for (int i = negative; 0 > i; i++) {
             num = (i<-1)?(num+String.valueOf(-1*i)+", "):(num+String.valueOf(-1*i));
-
         }
 
         //int absNegative = -1*negative; we can also use this.
+
 
         return num;
     }
