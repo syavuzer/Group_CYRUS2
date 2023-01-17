@@ -2,23 +2,16 @@ package Ephrem;
 import java.util.Scanner;
 
 public class SameLetter {
-    public static boolean sameLetter(String firstWord, String secondWord){
-        boolean sameLetter = true;
-        for(int i=0; i<secondWord.length(); i++){
-            int count = 0;
-            for(int j=0; j<firstWord.length(); j++) {
-                if (Character.toLowerCase(secondWord.charAt(i)) == Character.toLowerCase(firstWord.charAt(j))) {
-                    count++;
-                    break;
-                }
-            }
-            if(count == secondWord.length()-1){
-                sameLetter = true;
-            }else {
-                sameLetter = false;
+     public static boolean sameLetter(String firstWord, String secondWord){
+        boolean sameLetter = true;int count = 0;
+        for(int i=0; i<secondWord.length(); i++) {
+            if (firstWord.toLowerCase().contains(String.valueOf(Character.toLowerCase(secondWord.charAt(i))))){
+                count++;
             }
         }
-       return sameLetter;
+        sameLetter = count == (secondWord.length());
+
+        return sameLetter;
     }
 
     public static void main(String[] args) {
