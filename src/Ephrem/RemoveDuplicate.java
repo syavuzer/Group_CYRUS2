@@ -17,7 +17,7 @@ public class RemoveDuplicate {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a word");
-        String word = input.next();
+        String word = input.nextLine();
 
         System.out.println(duplicate(word));
     }
