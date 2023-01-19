@@ -21,7 +21,7 @@ public class FrequencyOfChar {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter any word");
-        String word = input.next();
+        String word = input.nextLine();
 
         System.out.println(frequency(word));
     }
