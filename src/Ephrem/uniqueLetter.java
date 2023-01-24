@@ -10,6 +10,7 @@ public class uniqueLetter {
         System.out.println(uniqueLetter(word));
     }
     public static String uniqueLetter(String word){
+        //convert string to array.
         String [] arrayWord = word.split("");
         int count = 0; String unique = "";
         for (String letter: arrayWord){
