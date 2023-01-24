@@ -2,6 +2,9 @@ package Suleyman;
 
 public class Practice_SameLetters {
 
+    public static void main(String[] args) {
+    }
+
 
 
 }
