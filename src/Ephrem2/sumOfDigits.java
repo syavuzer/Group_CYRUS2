@@ -15,7 +15,7 @@ public class sumOfDigits {
         for (int i=0; i<word.length(); i++) {
             if(Character.isDigit(word.charAt(i))){
                 //num+=Integer.parseInt(String.valueOf(word.charAt(i)));
-                num+=Character.getNumericValue(word.charAt(i));
+                num+= Character.getNumericValue(word.charAt(i));
             }
         }
         return num;
