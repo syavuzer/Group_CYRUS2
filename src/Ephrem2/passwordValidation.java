@@ -9,9 +9,9 @@ public class passwordValidation {
                 +"one lower letter, one digit and one special character)");
         String password = input.next();
 
-        System.out.println(passwordval(password));
+        System.out.println(validatePassword(password));
     }
-    public static String passwordval(String password){
+    public static String validatePassword(String password){
         String passCreate = "";boolean isCapital = false , isLower = false , isSpecial = false, isDigit = false;
         if (password.length()>=6){
             for(int i=0; i<password.length(); i++){
