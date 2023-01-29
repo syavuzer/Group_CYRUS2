@@ -5,18 +5,19 @@ public class findMaximum {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int[]numbers = new int[5];
+        System.out.println("Enter five numbers separated by space.");
         for (int i=0; i<numbers.length;i++) {
-            System.out.println("Enter a number");
             numbers[i]=input.nextInt();
         }
 
         System.out.println(num(numbers));
     }
-    public static int num(int[]numbers){
-        int maxnum = 0;
+    public static String num(int[]numbers){
+        int maximum = 0;
         for (int num: numbers){
-            maxnum = (maxnum>num)?maxnum:num;
+            //maximum  = (maximum >num)?maximum :num;
+            maximum = Math.max(maximum,num);
         }
-        return maxnum;
+        return "The maximum number is " +maximum ;
     }
 }

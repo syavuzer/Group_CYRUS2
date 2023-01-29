@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class passwordValidation {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter your password (must be six and above character and must contain one capital letter, "
+        System.out.println("Enter your password (must be at least six character, must contain one capital letter, "
                 +"one lower letter, one digit and one special character)");
         String password = input.next();
 
