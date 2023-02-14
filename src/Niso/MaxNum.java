@@ -1,9 +1,6 @@
 package Niso;
-
 public class MaxNum {
-
     public static void main(String[] args) {
-
 
         //Write a method that can find the maximum number from an int Array
         int[] num = {20, 80, 50, 345, 285,};
